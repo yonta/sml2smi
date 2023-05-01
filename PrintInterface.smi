@@ -1,0 +1,7 @@
+_require "basis.smi"
+
+structure PrintInterface =
+struct
+  type filename = string
+  val execPrint : filename -> OS.Process.status
+end
